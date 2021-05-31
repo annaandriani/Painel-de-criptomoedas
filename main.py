@@ -1,8 +1,6 @@
 import time
 import requests
 import schedule
-from requests.exceptions import ConnectionError, Timeout, TooManyRedirects
-import json
 
 def Cotacoes():
   headers = {
@@ -24,7 +22,7 @@ def Cotacoes():
 
 def inicio():
   print("Olá, seja bem vindo ao painel de preços da MRBIT!")
-  print("Escolha o número 1 para ter acesso aos valores das criptomoedas e 2 se deseja encerrar a visualização!")
+  print("Escolha o número 1 para ter acesso aos valores das criptomoedas ou qualquer outro caractere para encerrar a execução!")
   valor = input("Adicione aqui o número desejado")
   if valor == "1":
     Cotacoes()
